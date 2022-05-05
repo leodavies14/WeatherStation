@@ -47,7 +47,12 @@ We plan to still use the current board or computer in order to display time, pre
 We will continue to code in C and we will use the specific code language given by the peripheral device (we plan to read documentation for both our current board and the device as well in order to interconnect them). 
 
 ## Feedback.
-This idea sounds cool! I think to give better feedback we would need to understand the weather device a little more. I am a little worried that the weather device will be doing most of the heavy lifing and the board will have a limited role. The communication between the board and the device could be tricky so just be careful there. I would say, really outline each part of the project to make sure you know what the board vs the device is responsible for and ensure that you aren't relying it too much.
+This idea sounds cool! I think to give better feedback we would need to understand the weather device a little more. I am a little worried that the weather device will be doing most of the heavy lifing and the board will have a limited role. Are you planning to use a complete weather station and just display data using the LCD or is each instrument inerfaced to the baord separately? For the latter,  you can split up the testing by first working on the code that reads and analog voltage (weather vane) and then counts digital ticks (you can use a button to simulate). Try to focus on one or two of the instruments first instead of getting it all integrated in one go. 
+
+Also, the board already has two relevant sensors, ambient light (could detect could cover) and a temperature sensore that is hooked up to the A/D converter. See the reference document for use. 
+
+Good luck!
+
 ## Welcome team! Please edit me.
 ### You can use the 'main' branch for you code.
 ### The GitHub web-page should be in the 'gh-pages' branch
